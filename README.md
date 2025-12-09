@@ -1,6 +1,6 @@
 # PLiTS-Net Repository (Ongoing)
 
-**NOTE: This repository provides datasets and reference implementations for the PLiTS-Net framework. The content is continuously updated. If you have any questions, please contact the corresponding author of the paper.**
+**NOTE: This repository provides datasets and reference implementations for the PLiTS-Net framework. The content is continuously updated. If you have any questions, please contact the corresponding author of the paper. Some data and code are currently unavailable because they are related to ongoing work.**
 
 ---
 
