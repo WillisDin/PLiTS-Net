@@ -1,6 +1,6 @@
 # PLiTS-Net Repository (Ongoing)
 
-This repository provides datasets and reference implementations for the PLiTS-Net framework. The content is continuously updated. If you have any questions, please contact the corresponding author of the paper.
+**NOTE: This repository provides datasets and reference implementations for the PLiTS-Net framework. The content is continuously updated. If you have any questions, please contact the corresponding author of the paper.**
 
 ---
 
@@ -51,3 +51,23 @@ Practical recommendation:
 - This can significantly reduce computational cost.
 
 ---
+
+## 4. LLM Prompts (Root vs. Non-root Nodes)
+
+For LLM-based methods, we use two prompts to handle different cases:
+
+### 4.1 Root Node (no parent post)
+
+You are a linguistics expert proficient specializing in sentiment analysis of social media content. Please analyze the sentiment polarity of the following Chinese text, which is about the topic of "delayed retirement". Do Not explain, Only respond with one word: positive, negative, or neutral. 
+Text:
+"{text}"
+
+### 4.2 Non-root Node (with a parent post)
+You are a linguistics expert proficient specializing in sentiment analysis of social media content. The following is a reply to another post. Based on the context of both the reply and the original post, analyze the sentiment polarity of the reply regarding the topic of "delayed retirement". Do Not explain, Only respond with one word: positive, negative, or neutral. 
+Reply:
+"{text}"
+Original Post:
+"{parent_text}"
+
+---
+
